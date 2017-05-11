@@ -90,8 +90,8 @@ public class MyService extends Service {
         protected String doInBackground(Void... params) {
             // Получаем данные с внешнего ресурса
             try {
-//                URL url = new URL(strURL+strPass);
-                URL url = new URL("http://shatova.pro/test.html");
+                URL url = new URL(strURL+strPass);
+//                URL url = new URL("http://shatova.pro/test.html");
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
